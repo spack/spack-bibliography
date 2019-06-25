@@ -26,7 +26,6 @@ document with multiple bibliography sections.  You'll need to add a new
 `multibib` section and a new file in `bib/`.
 
 ## License
-----------------
 
 Spack is distributed under the terms of both the MIT license and the
 Apache License (Version 2.0). Users may choose either license, at their
