@@ -1,4 +1,4 @@
-# Spack Citations
+# Spack Bibliography
 
 This repository contains BibTeX files with citations of publications,
 presentations, tutorials, etc. relating to
