@@ -1,0 +1,11 @@
+*~
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.top
+*.tui
+*-mpgraph.mp
+*.synctex.gz
+spack-bibliography.pdf
