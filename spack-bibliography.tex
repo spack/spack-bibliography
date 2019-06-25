@@ -1,0 +1,49 @@
+\documentclass[11pt]{llnl-whitepaper}
+
+\usepackage{times}
+\usepackage{xcolor}
+\colorlet{mylinkcolor}{black} % Links are slightly darker than color1
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=mylinkcolor,%
+    urlcolor=mylinkcolor,%
+    pdfborder=0 0 0%
+}
+\urlstyle{sf}    % Make URLs match rest of text.
+
+
+% Multiple Bibliographies and their titles.
+\usepackage{multibib}
+
+\newcommand{\paperSecTitle}{Peer Reviewed Papers}
+\newcommand{\presentationSecTitle}{Presentations and Meetings}
+\newcommand{\tutorialSecTitle}{Tutorials}
+
+\newcites{Paper,Presentation,Tutorial}{\paperSecTitle,\presentationSecTitle,\tutorialSecTitle}
+
+\title{Spack Bibliography}
+
+\date{}
+
+\begin{document}
+
+% Title stuff
+\maketitle
+
+\nocitePaper{*}
+\bibliographystylePaper{plain-url-inline-revchron}
+\bibliographyPaper{bib/papers}
+
+\nocitePresentation{*}
+\bibliographystylePresentation{plain-url-inline-revchron}
+\bibliographyPresentation{bib/presentations}
+
+\nociteTutorial{*}
+\bibliographystyleTutorial{plain-url-inline-revchron}
+\bibliographyTutorial{bib/tutorials}
+
+\end{document}
